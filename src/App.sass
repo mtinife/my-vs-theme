@@ -1,0 +1,30 @@
+.vs-app
+  width: 50vw
+  height: 50vh
+  display: grid
+  grid-template-columns: 0.1fr 0.6fr 1fr 1fr 0.5fr
+  grid-template-rows: 0.05fr 0.9fr 0.3fr 0.05fr
+  gap: 0px 0px
+  grid-template-areas: "TitleBar TitleBar TitleBar TitleBar TitleBar" "ActivityBar Side-Bar Editor Editor Minimap" "ActivityBar Side-Bar Terminal Terminal Terminal" "StatusBar StatusBar StatusBar StatusBar StatusBar"
+
+.Side-Bar
+  background: red
+  grid-area: Side-Bar
+.Editor
+  background: yellow
+  rid-area: Editor
+.Terminal
+  background: black
+  grid-area: Terminal
+.ActivityBar
+  background: purple
+  grid-area: ActivityBar
+.Minimap
+  background: blue
+  grid-area: Minimap
+.TitleBar
+  background: green
+  grid-area: TitleBar
+.StatusBar
+  background: orange
+  grid-area: StatusBar
