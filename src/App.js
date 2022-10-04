@@ -1,6 +1,7 @@
 import './App.sass'
 
-import { VscFiles, VscSearch, VscSourceControl, VscExtensions, VscAccount, VscGear, VscChromeMinimize, VscChromeMaximize, VscChromeClose, VscEllipsis, VscChevronDown, VscRemote, VscError, VscWarning, VscBracketDot, VscFeedback, VscBellDot } from "react-icons/vsc"
+import { VscFiles, VscSearch, VscSourceControl, VscExtensions, VscAccount, VscGear, VscChromeMinimize, VscChromeMaximize, VscChromeClose, VscEllipsis, VscChevronDown, VscRemote, VscError, VscWarning, VscBracketDot, VscFeedback, VscBellDot, VscCircleLargeFilled } from "react-icons/vsc"
+import { DiPython } from "react-icons/di"
 
 import logo from './vs-themer-logo-dark.png'
 
@@ -106,7 +107,18 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="Editor"></div>
+        <div className="Editor">
+          <div className="EditorTabGroup">
+            <div className="EditorTabs">
+              <p>
+                <DiPython />
+                demo.py
+              </p>
+              <p><VscCircleLargeFilled /></p>
+            </div>
+          </div>
+          <div className="EditorContainer"></div>
+        </div>
         <div className="Terminal"></div>
 
       </main>
