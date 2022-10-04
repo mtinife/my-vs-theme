@@ -1,6 +1,6 @@
 import './App.sass'
 
-import { VscFiles, VscSearch, VscSourceControl, VscExtensions, VscAccount, VscGear, VscChromeMinimize, VscChromeMaximize, VscChromeClose, VscEllipsis, VscChevronDown } from "react-icons/vsc"
+import { VscFiles, VscSearch, VscSourceControl, VscExtensions, VscAccount, VscGear, VscChromeMinimize, VscChromeMaximize, VscChromeClose, VscEllipsis, VscChevronDown, VscRemote, VscError, VscWarning, VscBracketDot, VscFeedback, VscBellDot } from "react-icons/vsc"
 
 import logo from './vs-themer-logo-dark.png'
 
@@ -86,7 +86,29 @@ function App() {
             <VscChromeClose />
           </div>
         </div>
-        <div className="StatusBar"></div>
+        <div className="StatusBar">
+          <div className="StatusBarRemote">
+            <VscRemote />
+          </div>
+          <div className="StatusBarContent">
+            <div className="StatusBarContentLeft">
+              <VscError />
+              <span> 0 </span>
+              <VscWarning />
+              <span> 0 </span>
+            </div>
+            <div className="StatusBarContentRight">
+              <p className="spacing">Ln <span>0,</span> Col <span>0</span></p>
+              <p>Spaces: <span>4</span></p>
+              <p className="spacing">UTF-8</p>
+              <p>CRLF</p>
+              <p className="spacing"><VscBracketDot /> Python</p>
+              <p>Layout: US</p>
+              <p className="spacing"><VscFeedback /></p>
+              <p><VscBellDot /></p>
+            </div>
+          </div>
+        </div>
       </main>
     </div>
   );

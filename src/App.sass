@@ -10,6 +10,9 @@
 .borderTop
   border-top: 1px solid gray
 
+.spacing
+  padding: 0 20px
+
 .Side-Bar
   background: red
   grid-area: Side-Bar
@@ -83,3 +86,14 @@
 .StatusBar
   background: orange
   grid-area: StatusBar
+  display: grid
+  grid-template-columns: 0.02fr 1fr
+  align-items: center
+  padding: 0 10px
+  .StatusBarContent
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .StatusBarContentRight
+      display: flex
+      justify-content: space-between
