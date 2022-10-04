@@ -8,56 +8,7 @@ function App() {
   return (
     <div className="App">
       <main className="vs-app">
-        <div className="Side-Bar">
-          <div className="SideBarTop">
-            <div className="SideBarExplorer">
-              <p>explorer</p>
-              <div><VscEllipsis /></div>
-            </div>
-            <div className="SideBarFileGroup">
-              <div><VscChevronDown /></div>
-              <p>Project Folder Title</p>
-            </div>
-          </div>
-          <div className="SideBarBottom">
-            <div className="SideBarFileGroup borderTop">
-              <div><VscChevronDown /></div>
-              <p>outline</p>
-            </div>
-            <div className="SideBarFileGroup borderTop">
-              <div><VscChevronDown /></div>
-              <p>timeline</p>
-            </div>
-          </div>
-        </div>
-        <div className="Editor"></div>
-        <div className="Terminal"></div>
-        <div className="ActivityBar">
-          <div className="ActivityBarTop">
-            <div className="ActivityBarSpacing ActivityBarIcon">
-              <VscFiles />
-            </div>
-            <div className="ActivityBarIcon">
-              <VscSearch />
-            </div>
-            <div className="ActivityBarSpacing ActivityBarIcon">
-              <VscSourceControl />
-            </div>
-            <div className="ActivityBarIcon">
-              <VscExtensions />
-            </div>
-          </div>
-          <div className="ActivityBarBottom">
-          <div className="ActivityBarIcon">
-            <VscAccount />
-          </div>
-          <div className="ActivityBarSpacing ActivityBarIcon">
-            <VscGear />
-          </div>
-          </div>
-        </div>
-        <div className="Minimap"></div>
-        <div className="TitleBar">
+      <div className="TitleBar">
           <div className="TitleBarLeft">
             <img className="logo" src={logo} />
             <div>
@@ -109,6 +60,55 @@ function App() {
             </div>
           </div>
         </div>
+        <div className="ActivityBar">
+          <div className="ActivityBarTop">
+            <div className="ActivityBarSpacing ActivityBarIcon">
+              <VscFiles />
+            </div>
+            <div className="ActivityBarIcon">
+              <VscSearch />
+            </div>
+            <div className="ActivityBarSpacing ActivityBarIcon">
+              <VscSourceControl />
+            </div>
+            <div className="ActivityBarIcon">
+              <VscExtensions />
+            </div>
+          </div>
+          <div className="ActivityBarBottom">
+          <div className="ActivityBarIcon">
+            <VscAccount />
+          </div>
+          <div className="ActivityBarSpacing ActivityBarIcon">
+            <VscGear />
+          </div>
+          </div>
+        </div>
+        <div className="SideBar">
+          <div className="SideBarTop">
+            <div className="SideBarExplorer">
+              <p>explorer</p>
+              <div><VscEllipsis /></div>
+            </div>
+            <div className="SideBarFileGroup">
+              <div><VscChevronDown /></div>
+              <p>Project Folder Title</p>
+            </div>
+          </div>
+          <div className="SideBarBottom">
+            <div className="SideBarFileGroup borderTop">
+              <div><VscChevronDown /></div>
+              <p>outline</p>
+            </div>
+            <div className="SideBarFileGroup borderTop">
+              <div><VscChevronDown /></div>
+              <p>timeline</p>
+            </div>
+          </div>
+        </div>
+        <div className="Editor"></div>
+        <div className="Terminal"></div>
+
       </main>
     </div>
   );
