@@ -1,6 +1,6 @@
 .vs-app
-  width: 50vw
-  height: 50vh
+  width: 100vw
+  height: 100vh
   display: grid
   grid-template-columns: 0.1fr 0.6fr 1fr 1fr 0.5fr
   grid-template-rows: 0.05fr 0.9fr 0.3fr 0.05fr
@@ -10,21 +10,60 @@
 .Side-Bar
   background: red
   grid-area: Side-Bar
+
 .Editor
   background: yellow
   rid-area: Editor
+
 .Terminal
   background: black
   grid-area: Terminal
+
+.ActivityBarIcon
+  text-align: center
+.ActivityBarSpacing
+  padding: 20px 0
 .ActivityBar
   background: purple
   grid-area: ActivityBar
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  .ActivityBarTop
+    display: flex
+    flex-direction: column
+  .ActivityBarBottom
+    display: flex
+    flex-direction: column
+
 .Minimap
   background: blue
   grid-area: Minimap
+
+.TitleBarSpacing
+  padding: 0 20px
+
 .TitleBar
   background: green
   grid-area: TitleBar
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr 
+  justify-content: space-between
+  align-items: center
+  padding: 0 20px
+  .TitleBarLeft
+    display: flex
+    .logo
+      align-self: center
+      width: 1.5rem
+    ul
+      list-style: none
+      display: flex
+  .TitleBarCenter
+    text-align: center
+  .TitleBarRight
+    text-align: end
+
 .StatusBar
   background: orange
   grid-area: StatusBar
