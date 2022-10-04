@@ -1,6 +1,6 @@
 import './App.sass'
 
-import { VscFiles, VscSearch, VscSourceControl, VscExtensions, VscAccount, VscGear, VscChromeMinimize, VscChromeMaximize, VscChromeClose } from "react-icons/vsc"
+import { VscFiles, VscSearch, VscSourceControl, VscExtensions, VscAccount, VscGear, VscChromeMinimize, VscChromeMaximize, VscChromeClose, VscEllipsis, VscChevronDown } from "react-icons/vsc"
 
 import logo from './vs-themer-logo-dark.png'
 
@@ -9,7 +9,26 @@ function App() {
     <div className="App">
       <main className="vs-app">
         <div className="Side-Bar">
-          
+          <div className="SideBarTop">
+            <div className="SideBarExplorer">
+              <p>explorer</p>
+              <div><VscEllipsis /></div>
+            </div>
+            <div className="SideBarFileGroup">
+              <div><VscChevronDown /></div>
+              <p>Project Folder Title</p>
+            </div>
+          </div>
+          <div className="SideBarBottom">
+            <div className="SideBarFileGroup borderTop">
+              <div><VscChevronDown /></div>
+              <p>outline</p>
+            </div>
+            <div className="SideBarFileGroup borderTop">
+              <div><VscChevronDown /></div>
+              <p>timeline</p>
+            </div>
+          </div>
         </div>
         <div className="Editor"></div>
         <div className="Terminal"></div>
@@ -41,16 +60,16 @@ function App() {
         <div className="TitleBar">
           <div className="TitleBarLeft">
             <img className="logo" src={logo} />
-            <ul>
-              <li>File</li>
-              <li className="TitleBarSpacing">Edit</li>
-              <li>Selection</li>
-              <li className="TitleBarSpacing">View</li>
-              <li>Go</li>
-              <li className="TitleBarSpacing">Run</li>
-              <li>Terminal</li>
-              <li className="TitleBarSpacing">Help</li>
-            </ul>
+            <div>
+              <span className="TitleBarSpacing">File</span>
+              <span>Edit</span>
+              <span className="TitleBarSpacing">Selection</span>
+              <span>View</span>
+              <span className="TitleBarSpacing">Go</span>
+              <span>Run</span>
+              <span className="TitleBarSpacing">Terminal</span>
+              <span>Help</span>
+            </div>
           </div>
           <div className="TitleBarCenter">
             <div>
