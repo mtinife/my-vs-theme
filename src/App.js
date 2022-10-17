@@ -117,7 +117,9 @@ function App() {
               <p><VscCircleLargeFilled /></p>
             </div>
           </div>
-          <div className="EditorContainer"></div>
+          <div className="EditorContainer">
+            
+          </div>
         </div>
         <div className="Terminal"></div>
 

@@ -1,0 +1,141 @@
+.vs-app {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0.1fr 0.5fr 1fr 1fr;
+  grid-template-rows: 0.05fr 1fr 0.5fr 0.05fr;
+  gap: 0px 0px;
+  grid-template-areas: "TitleBar TitleBar TitleBar TitleBar" "ActivityBar SideBar Editor Editor" "ActivityBar SideBar Terminal Terminal" "StatusBar StatusBar StatusBar StatusBar";
+}
+
+.borderTop {
+  border-top: 1px solid gray;
+}
+
+.spacing {
+  padding: 0 20px;
+}
+
+.SideBar {
+  background: red;
+  grid-area: SideBar;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.SideBar .SideBarExplorer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+.SideBar .SideBarExplorer p {
+  text-transform: uppercase;
+}
+.SideBar .SideBarFileGroup {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.Editor {
+  background: yellow;
+  grid-area: Editor;
+}
+.Editor .EditorTabGroup {
+  width: 100%;
+}
+.Editor .EditorTabGroup .EditorTabs {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Terminal {
+  background: black;
+  grid-area: Terminal;
+}
+
+.ActivityBarIcon {
+  text-align: center;
+}
+
+.ActivityBarSpacing {
+  padding: 20px 0;
+}
+
+.ActivityBar {
+  background: purple;
+  grid-area: ActivityBar;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.ActivityBar .ActivityBarTop {
+  display: flex;
+  flex-direction: column;
+}
+.ActivityBar .ActivityBarBottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.Minimap {
+  background: blue;
+  grid-area: Minimap;
+}
+
+.TitleBarSpacing {
+  padding: 0 20px;
+}
+
+.TitleBar {
+  background: green;
+  grid-area: TitleBar;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.TitleBar .TitleBarLeft {
+  display: flex;
+}
+.TitleBar .TitleBarLeft .logo {
+  align-self: center;
+  width: 1.5rem;
+}
+.TitleBar .TitleBarLeft div {
+  display: flex;
+}
+.TitleBar .TitleBarCenter {
+  text-align: center;
+}
+.TitleBar .TitleBarRight {
+  text-align: end;
+}
+
+.StatusBar {
+  background: orange;
+  grid-area: StatusBar;
+  display: grid;
+  grid-template-columns: 0.02fr 1fr;
+  align-items: center;
+}
+.StatusBar .StatusBarRemote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: green;
+  height: 100%;
+}
+.StatusBar .StatusBarContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+.StatusBar .StatusBarContent .StatusBarContentRight {
+  display: flex;
+  justify-content: space-between;
+}
