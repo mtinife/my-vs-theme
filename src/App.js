@@ -118,8 +118,13 @@ function App() {
             </div>
           </div>
           <div className="EditorContainer">
-            
+            <table>
+              <tbody>
+                <tr>
+                  <td></td>
+            </table>
           </div>
+        </div>
         </div>
         <div className="Terminal"></div>
 
